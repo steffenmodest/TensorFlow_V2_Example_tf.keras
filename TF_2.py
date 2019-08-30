@@ -6,7 +6,7 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 
-print("GPU Available: ", tf.test.is_gpu_available())
+print("GPU Available: ", tf.compat.v1.test.is_gpu_available())
 
 tf.debugging.set_log_device_placement(True)
 
